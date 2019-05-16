@@ -1,6 +1,14 @@
 <?php
-$n1= 13;
-$n2=14;
-$n3=$n1+$n2;
-echo "O Resultado de $n1 + $n2 é = $n3"
+$n=$_GET["w"];
+
+echo "O Preço é de:".number_format($n, 2);
+
+$n += $n*30/100;
+
+echo "<br/>"."O Resultado da procentagem é :".number_format($n, 2);
+
+$a=3;
+$b=&$a;
+$b= 5;
+echo "<br> $a"
 ?>
