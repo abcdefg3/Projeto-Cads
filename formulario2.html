@@ -1,0 +1,59 @@
+<!Doctype>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulario de teste</title>
+	</head>
+	<body>
+	<script>
+	
+	
+	</script>
+		<h1>Formulario</h1>
+		<form>
+		<fieldset>
+			<label for="nome">Nome Completo</label></br>
+				<input type="text" name="nome" id="nome"  required/></br>
+			<label for="e-mail">Digite seu E-mail</label></br>
+				<input Type="text" name="email" id="email" required/></br>
+		</fieldset>
+		<fieldset>
+		<legend>Método de contrato preferido:</legend>
+			<label for="email">E-mail</label>
+				<input type="radio" name="Método de contrato preferido:" id="email" required/>
+			<label for="telefone">Telefone</label>
+				<input type="radio" name="Método de contrato preferido:" id="telefone" required/>
+		</fieldset>
+		<fieldset>
+		<legend>Hobbies(Opcional,mas minimo 2:):</legend>
+			<label for="esquiar">Esquiar</label>
+				<input type="checkbox" name="esquiar" id="esquiar" /></br>
+			<label for="corrida">Corrida</label>
+				<input type="checkbox" name="corrida" id="corrida"/></br>
+			<label for="comendo">Comendo</label>
+				<input type="checkbox" name="comendo" id="comendo" /></br>
+			<label for="adormecido">Adormecido</label>
+				<input type="checkbox" name="adormecido" id="adormecido" /></br>
+			<label for="leitura">Leitura</label>
+				<input type="checkbox" name="leitura" id="leitura"/></br>
+			<label for="codificação">Codificação</label>
+				<input type="checkbox" name="codificação" id="codificação" /></br>
+			<p>
+		</fieldset>
+			<label for="ouviu">Ouvimos sobre nós via*:</label>
+		<select id="ouviu" required="">
+				<option value="">Pressione..</option>
+				<option value="pressione">Pressione</option>
+				<option value="internet">Internet</option>
+				<option value="boca">boca a boca</option>
+				<option value="outros">De outros..</option>
+		</select>
+			</p>
+			<p>
+			<label for="menssagem">Menssagem (20 Caracteres no mínimo, 100 máximo) :</label></br>
+				<textarea id="menssagem" class="form-control" name="menssagem" data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 character comment.." data-parsley-validation-threshold="10"></textarea></br>
+			</p><br>
+				<input type="submit" value="validar">
+
+	</body>
+</html>
